@@ -10,7 +10,7 @@ paths:
   '/users/{userId}':
     parameters:
       - schema:
-          type: integer
+          type: string
         name: userId
         in: path
         required: true
@@ -95,6 +95,15 @@ paths:
         description: Patch user properties to update.
       x-stoplight:
         id: 8qqp1viostu1e
+    delete:
+      summary: Delete User
+      tags: []
+      responses:
+        '204':
+          description: No Content
+      operationId: delete-users-userId
+      x-stoplight:
+        id: q5h9t9k7gky72
   /user:
     post:
       summary: Create New User
