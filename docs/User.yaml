@@ -41,9 +41,9 @@ paths:
       description: Retrieve the information of the user with the matching user ID.
       x-stoplight:
         id: yjoqrdrhgrsdw
-    patch:
+    put:
       summary: Update User Information
-      operationId: patch-users-userId
+      operationId: put-users-userId
       responses:
         '200':
           description: User Updated
